@@ -51,7 +51,29 @@ int main()
 	{
 		SumLuong = SumLuong + congNhan[i].Luong;
 	}
-	cout << "Tong so luong phai tra la: " << SumLuong;
+	cout << "\nTong so luong phai tra la: " << fixed<<SumLuong;
+	cout << "\nSap xep cong nhan theo chuc vu: \n";
+	for (int i = 0; i < n; i++)
+	{
+		if (congNhan[i].chucVu == "Giam doc")
+		{
+			cout << congNhan[i].Ten << endl;
+		}		
+	}
+	for (int i = 0; i < n; i++)
+	{
+		if (congNhan[i].chucVu == "Truong phong")
+		{
+			cout << congNhan[i].Ten << endl;
+		}
+	}
+	for (int i = 0; i < n; i++)
+	{
+		if (congNhan[i].chucVu == "Nhan vien")
+		{
+			cout << congNhan[i].Ten << endl;
+		}
+	}
 	cout << endl;
 	system("pause");
 }
